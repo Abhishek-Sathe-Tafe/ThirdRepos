@@ -38,6 +38,7 @@
             this.radBox = new System.Windows.Forms.RadioButton();
             this.grpSection = new System.Windows.Forms.GroupBox();
             this.cmdCalculate = new System.Windows.Forms.Button();
+            this.chkDiscountC = new System.Windows.Forms.CheckBox();
             this.radBack = new System.Windows.Forms.RadioButton();
             this.grpSection.SuspendLayout();
             this.SuspendLayout();
@@ -84,6 +85,7 @@
             this.chkDiscount.TabIndex = 5;
             this.chkDiscount.Text = "Senior / Student";
             this.chkDiscount.UseVisualStyleBackColor = true;
+            this.chkDiscount.CheckedChanged += new System.EventHandler(this.chkDiscount_CheckedChanged);
             // 
             // radBalcony
             // 
@@ -140,6 +142,17 @@
             this.cmdCalculate.UseVisualStyleBackColor = true;
             this.cmdCalculate.Click += new System.EventHandler(this.cmdCalculate_Click);
             // 
+            // chkDiscountC
+            // 
+            this.chkDiscountC.AutoSize = true;
+            this.chkDiscountC.Location = new System.Drawing.Point(247, 95);
+            this.chkDiscountC.Name = "chkDiscountC";
+            this.chkDiscountC.Size = new System.Drawing.Size(49, 17);
+            this.chkDiscountC.TabIndex = 11;
+            this.chkDiscountC.Text = "Child";
+            this.chkDiscountC.UseVisualStyleBackColor = true;
+            this.chkDiscountC.CheckedChanged += new System.EventHandler(this.chkDiscountC_CheckedChanged);
+            // 
             // radBack
             // 
             this.radBack.AutoSize = true;
@@ -155,6 +168,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(608, 445);
+            this.Controls.Add(this.chkDiscountC);
             this.Controls.Add(this.cmdCalculate);
             this.Controls.Add(this.grpSection);
             this.Controls.Add(this.chkDiscount);
@@ -184,6 +198,7 @@
         private System.Windows.Forms.RadioButton radBox;
         private System.Windows.Forms.GroupBox grpSection;
         private System.Windows.Forms.Button cmdCalculate;
+        private System.Windows.Forms.CheckBox chkDiscountC;
         private System.Windows.Forms.RadioButton radBack;
     }
 }
